@@ -29,19 +29,6 @@ This project is modeled after real-world Tier 1 (L1) Security Operations Center 
 3. **Human-in-the-Loop Validation:** While automation handles enrichment and triage at machine speed, critical validation and final judgment remain under human supervision. A security analyst reviews the structured incident report delivered via Gmail to confirm the severity before executing destructive actions.
 4. **Automated Containment Actions:** For high-severity threats, the pipeline can extend beyond alerting to execute automated response actions—such as triggering endpoint isolation plays or blocking malicious IPs at the perimeter.
 
-
-## 🏗️ Architecture & Workflow
-
-The diagram below illustrates the end-to-end flow of the automated SOC and SOAR pipeline:
-
-```mermaid
-graph TD
-    A[Ubuntu VM: Python Log Forwarder] -->|HTTP POST Webhook| B(n8n Workflow Automation)
-    B --> C[Groq AI: LLM Threat Triage & MITRE Mapping]
-    B --> D[AbuseIPDB API: Threat Intelligence Enrichment]
-    C --> E[Gmail Node: Automated SOC Alert & Playbook Guidance]
-    D --> E
-
 ---
 
 ## 📂 Repository Structure
