@@ -10,6 +10,8 @@ An open-source, cost-effective Security Orchestration, Automation, and Response 
 3. **AI Threat Triage:** **Groq LLM** analyzes behavioral indicators, evaluates risk scores, maps attacks to the **MITRE ATT&CK framework**, and generates actionable playbook recommendations.
 4. **Threat Intelligence Enrichment:** Automatically queries **AbuseIPDB** to fetch real-time reputation scores, Tor exit node detection, and ISP data.
 5. **Incident Response:** Dispatches a structured, automated SOC incident report straight to Gmail.
+6. ### n8n Pipeline Automation Canvas
+![n8n Workflow Canvas](workflow-canvas.png.png)
 
 ---
 
